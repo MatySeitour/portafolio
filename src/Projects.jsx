@@ -1,7 +1,4 @@
-import { useRef } from "react";
 import { Project } from "./Project";
-import { useState } from "react"
-import useIntersection from "./CustomHooks/useIntersection";
 
 function Projects(){
     const projects = [
@@ -39,8 +36,6 @@ function Projects(){
         },
     ]
 
-    const element = useRef(null);
-    const screen = useIntersection(element)
 
     return(
         <section className="w-screen h-full">
@@ -52,8 +47,7 @@ function Projects(){
                     </div>
                     <div>
                         {projects.map((project) => (
-                            <div key={project.id} ref={element}>
-                                {screen && 
+                            <div key={project.id}>
                                     <Project 
                                         projectId={project.id}
                                         projectBackground={project.backgroundImg}
@@ -62,7 +56,6 @@ function Projects(){
                                         projectVercelLink={project.vercelLink}
                                         projectGitLink={project.gitLink}
                                     /> 
-                                }
                             </div>                                                                                    
                         ))}
                     </div>  
