@@ -51,7 +51,7 @@ function Skills(){
                     </div>
 
                     <div className="w-full h-screen flex justify-center pt-24 flex-col items-center">
-                        <h3 className="text-3xl tracking-widest font-medium text-black">MY SKILLS</h3>
+                        <h3 className="text-3xl tracking-widest font-bold text-black">MY SKILLS</h3>
                         <ul className="w-full h-screen flex justify-between flex-wrap py-8 px-6">
                             {skillsData.map((skill) => (
                                 <Skill 

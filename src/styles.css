@@ -224,3 +224,6 @@
     box-shadow: -40vmin 0 5.465125871849569vmin currentColor;
 }
 
+.card-styles{
+    min-height: 100px;
+}
