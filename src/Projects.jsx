@@ -1,4 +1,7 @@
 import { Project } from "./Project";
+import imagePeliwiki from "../src/assets/peliwiki.png"
+import imageBatatabit from "../src/assets/batatabit.png"
+import imageRappi from "../src/assets/rappi.png"
 
 function Projects(){
     const projects = [
@@ -6,7 +9,7 @@ function Projects(){
             id: 1,
             name: "PeliWiki",
             description: "this is a web app about movie made with react and axios",
-            backgroundImg: "../public/peliwiki.png",
+            backgroundImg: imagePeliwiki,
             gitLink: "https://github.com/MatySeitour/Peliwiki",
             vercelLink: "https://peliwiki.vercel.app/",
         },
@@ -14,7 +17,7 @@ function Projects(){
             id: 2,
             name: "Batatabit",
             description: "this is a landing page about the price of some cryptos. made in vanilla javascript",
-            backgroundImg: "../public/batatabit.png",
+            backgroundImg: imageBatatabit,
             gitLink: "https://github.com/MatySeitour/batatabit.github.io",
             vercelLink: "https://batatabit-github-io.vercel.app/",
         },
@@ -22,7 +25,7 @@ function Projects(){
             id: 3,
             name: "Rappi Cart",
             description: "This is a web app about an e-commerce where you can filter and order products, as well as add them to a cart. (This is a challenge that they ask to work at Rappi)",
-            backgroundImg: "../public/rappi.png",
+            backgroundImg: imageRappi,
             gitLink: "https://github.com/MatySeitour/rappi-challenge",
             vercelLink: "https://rappi-challenge.vercel.app/",
         },
@@ -38,7 +41,7 @@ function Projects(){
 
 
     return(
-        <section className="w-screen h-full">
+        <section id="project" className="w-screen h-full">
             <div className="w-full h-full" key={84}>
                 <svg className="w-full translate-y-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="black" fillOpacity="1" d="M0,0L1440,192L1440,320L0,320Z"></path></svg>
                 <div className="w-full h-auto bg-black flex flex-wrap items-center justify-center">
