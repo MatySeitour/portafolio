@@ -10,6 +10,8 @@ function App() {
 
   return (
     <>
+      <div key={2} className='bg'></div>
+      <div className='content'></div>
       <Background />
       <Hero />
       <Projects />

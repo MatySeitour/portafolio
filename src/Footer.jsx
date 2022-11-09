@@ -4,7 +4,7 @@ function Footer(){
     return(
         <footer className="h-40 flex justify-evenly bg-black pl-5 pr-5">
             <div className="w-full h-full relative flex flex-col justify-evenly items-start">
-                <a href="#about_me" className="text-SM font-bold text-white">ABOUT ME</a>
+                <a href="#about_me" target="_blank" className="text-SM font-bold text-white">ABOUT ME</a>
                 <a href="#project" className="text-SM font-bold text-white">MY PROJECTS</a>
                 <a href="#skills" className="text-SM font-bold text-white">MY SKILLS</a>
             </div>
