@@ -1,14 +1,14 @@
-import { Skill } from "./Skill"
-import useIntersection from "./CustomHooks/useIntersection";
+import { Skill } from "./Skill";
+import useIntersection from "../CustomHooks/useIntersection";
 import { useRef } from "react";
-import imageHtml from "../src/assets/icons8-html-5-96.png"
-import imageCss from "../src/assets/icons8-css3-96.png"
-import imageJS from "../src/assets/icons8-javascript-96.png"
-import imageReact from "../src/assets/icons8-reaccionar-80.png"
-import imageNode from "../src/assets/icons8-node-js-96.png"
-import imageExpress from "../src/assets/icons8-express-js-100.png"
-import imageSQL from "../src/assets/icons8-logo-de-mysql-96.png"
-import imageTailwind from "../src/assets/icons8-tailwind-css-96.png"
+import imageHtml from "../assets/icons8-html-5-96.png"
+import imageCss from "../assets/icons8-css3-96.png"
+import imageJS from "../assets/icons8-javascript-96.png"
+import imageReact from "../assets/icons8-reaccionar-80.png"
+import imageNode from "../assets/icons8-node-js-96.png"
+import imageExpress from "../assets/icons8-express-js-100.png"
+import imageSQL from "../assets/icons8-logo-de-mysql-96.png"
+import imageTailwind from "../assets/icons8-tailwind-css-96.png"
 
 function Skills(){
     const skillsData = [

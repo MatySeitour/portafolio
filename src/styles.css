@@ -26,7 +26,7 @@
     height: 100vh;
     top: 0;
     left: 0;
-    background: #ffffff;
+    background: #004;
     overflow: hidden;
 }
 
@@ -230,4 +230,81 @@
 
 html{
     scroll-behavior: smooth;
+}
+
+.scroll{
+    overflow-y: hidden;
+}
+
+.height-contact{
+    min-height: 1500px;
+}
+
+.background-icon{
+    background: linear-gradient(45deg, #004, #a00);
+}
+
+/* CONTACT SECTION */
+
+
+.contact-items__container{
+    display: flex;
+    justify-content: space-around;
+    min-height: 50px;
+    align-items: center;
+    transform: translateY(6px);
+    border-radius: 100px;
+}
+
+.contact-whatsapp{
+    min-width: 100px;
+    display: flex;
+    justify-content: space-around;
+    min-height: 50px;
+    align-items: center;
+    transform: translateY(6px);
+    border-radius: 100px;
+    background-color: #0a0;
+    transition: min-width .3s ease;
+}
+
+.contact-github{
+    min-width: 100px;
+    display: flex;
+    justify-content: space-around;
+    min-height: 50px;
+    align-items: center;
+    transform: translateY(6px);
+    border-radius: 100px;
+    background-color: black;
+    transition: min-width .3s ease;
+}
+
+.contact-linkedin{
+    min-width: 100px;
+    display: flex;
+    justify-content: space-around;
+    min-height: 50px;
+    align-items: center;
+    transform: translateY(6px);
+    border-radius: 100px;
+    background-color: white;
+    transition: min-width .3s ease;
+}
+
+.contact-gmail{
+    min-width: 100px;
+    display: flex;
+    justify-content: space-around;
+    min-height: 50px;
+    align-items: center;
+    transform: translateY(6px);
+    border-radius: 100px;
+    background-color: red;
+    transition: min-width .3s ease;
+}
+
+.contact-active{
+    min-width: 300px;
+    transition: min-width .3s ease;
 }

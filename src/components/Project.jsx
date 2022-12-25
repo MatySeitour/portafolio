@@ -1,12 +1,10 @@
-import useIntersection from "./CustomHooks/useIntersection";
+import useIntersection from "../CustomHooks/useIntersection";
 import { useRef } from "react";
-import "../src/styles.css"
+import "../styles.css"
 
 function Project({projectId, projectBackground, projectName, projectDescription, projectVercelLink, projectGitLink}){
     const element = useRef(null);
     const screen = useIntersection(element)
-    console.log(screen)
-    console.log(projectBackground)
 
     return(
         <>

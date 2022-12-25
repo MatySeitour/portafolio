@@ -1,7 +1,7 @@
 import { Project } from "./Project";
-import imagePeliwiki from "../src/assets/peliwiki.png"
-import imageBatatabit from "../src/assets/batatabit.png"
-import imageRappi from "../src/assets/rappi.png"
+import imagePeliwiki from "../assets/peliwiki.png"
+import imageBatatabit from "../assets/batatabit.png"
+import imageRappi from "../assets/rappi.png"
 
 function Projects(){
     const projects = [

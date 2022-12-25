@@ -1,10 +1,10 @@
 import './App.css'
-import { Hero } from './Hero'
-import { Background } from './Background'
-import { Projects } from './Projects';
-import { Skills } from './Skills';
+import { Hero } from './components/Hero';
+import { Background } from './components/Background';
+import { Projects } from './components/Projects';
+import { Skills } from './components/Skills';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Footer } from './Footer';
+import { Footer } from './components/Footer';
 
 function App() {
 

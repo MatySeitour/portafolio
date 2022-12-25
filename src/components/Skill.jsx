@@ -4,7 +4,7 @@ function Skill({skillName, skillImgUrl}){
             <div>
                 <img src={skillImgUrl}/>
             </div>
-            <h5 className="tracking-wider text-black font-extrabold">{skillName}</h5>
+            <h5 className="tracking-wider text-white font-extrabold">{skillName}</h5>
         </li>
     )
 }
