@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <div key={2} className='bg'></div>
+      <div key={2} className='background-bug'></div>
       <div className='content'></div>
       <Background />
       <Hero />

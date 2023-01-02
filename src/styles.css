@@ -252,7 +252,6 @@ html{
     justify-content: space-around;
     min-height: 50px;
     align-items: center;
-    transform: translateY(6px);
     border-radius: 100px;
 }
 
@@ -262,10 +261,10 @@ html{
     justify-content: space-around;
     min-height: 50px;
     align-items: center;
-    transform: translateY(6px);
     border-radius: 100px;
     background-color: #0a0;
     transition: min-width .3s ease;
+    position: relative;
 }
 
 .contact-github{
@@ -274,10 +273,10 @@ html{
     justify-content: space-around;
     min-height: 50px;
     align-items: center;
-    transform: translateY(6px);
     border-radius: 100px;
     background-color: black;
     transition: min-width .3s ease;
+    position: relative;
 }
 
 .contact-linkedin{
@@ -286,10 +285,10 @@ html{
     justify-content: space-around;
     min-height: 50px;
     align-items: center;
-    transform: translateY(6px);
     border-radius: 100px;
     background-color: white;
     transition: min-width .3s ease;
+    position: relative;
 }
 
 .contact-gmail{
@@ -298,13 +297,45 @@ html{
     justify-content: space-around;
     min-height: 50px;
     align-items: center;
-    transform: translateY(6px);
     border-radius: 100px;
     background-color: red;
     transition: min-width .3s ease;
+    position: relative;
 }
 
 .contact-active{
-    min-width: 300px;
+    min-width: 250px;
     transition: min-width .3s ease;
+}
+
+.contact-active__gmail{
+    min-width: 310px;
+    transition: min-width .3s ease; 
+}
+
+.line-contact{
+    height: 70%;
+    transform: translateY(8px);
+    width: 2px;
+    background-color: aliceblue;
+    margin-right: 6px;
+}
+
+.line-contact__linkedin{
+    height: 70%;
+    transform: translateY(8px);
+    width: 2px;
+    background-color: blue;
+    margin-right: 6px;
+}
+
+.aparece{
+    position: absolute;
+    opacity: 1;
+    transition: all 1s ease;
+}
+
+.desaparece{
+    position: absolute;
+    opacity: 0;
 }
