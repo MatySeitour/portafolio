@@ -36,8 +36,8 @@ function Contact({contactModalState, setContactModalState}){
                     <div className={contactState == 1 ? "w-full h-full flex justify-between items-center pl-4 pr-4 aparece" : "desaparece"}>
                         <a className="text-white underline">+54 115964-0417</a>
                         <div className="flex h-full">
-                            <CopyToClipboard text={valueCopy} onCopy={() => setCopied(true)}>
-                                <svg onClick={() => copyText(1)} fill="white" xmlns="http://www.w3.org/2000/svg" className="w-5 mr-2" viewBox="0 0 512 512"><path d="M224 0c-35.3 0-64 28.7-64 64V288c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H224zM64 160c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H288c35.3 0 64-28.7 64-64V384H288v64H64V224h64V160H64z"/></svg>
+                            <CopyToClipboard text={"+54 115964-0417"} onCopy={() => setCopied(true)}>
+                                <svg fill="white" xmlns="http://www.w3.org/2000/svg" className="w-5 mr-2" viewBox="0 0 512 512"><path d="M224 0c-35.3 0-64 28.7-64 64V288c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H224zM64 160c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H288c35.3 0 64-28.7 64-64V384H288v64H64V224h64V160H64z"/></svg>
                             </CopyToClipboard>
                             <span className="line-contact"></span>
                             <a href="https://api.whatsapp.com/send?phone=1159640417" target="_blank" className={contactState == 1 ? "h-full flex" : "hidden"}>
@@ -52,8 +52,8 @@ function Contact({contactModalState, setContactModalState}){
                 <div className={contactState == 2 ? "w-full h-full flex justify-between items-center pl-4 pr-4 aparece" : "desaparece"}>
                     <a className="text-white underline">MatySeitour</a>
                     <div className="flex h-full">
-                        <CopyToClipboard text={valueCopy} onCopy={() => setCopied(true)}>
-                            <svg onClick={() => copyText(2)} fill="white" xmlns="http://www.w3.org/2000/svg" className="w-5 mr-2" viewBox="0 0 512 512"><path d="M224 0c-35.3 0-64 28.7-64 64V288c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H224zM64 160c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H288c35.3 0 64-28.7 64-64V384H288v64H64V224h64V160H64z"/></svg>
+                        <CopyToClipboard text="https://github.com/MatySeitour" onCopy={() => setCopied(true)}>
+                            <svg fill="white" xmlns="http://www.w3.org/2000/svg" className="w-5 mr-2" viewBox="0 0 512 512"><path d="M224 0c-35.3 0-64 28.7-64 64V288c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H224zM64 160c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H288c35.3 0 64-28.7 64-64V384H288v64H64V224h64V160H64z"/></svg>
                         </CopyToClipboard>
                         <span className="line-contact"></span>
                         <a href="https://github.com/MatySeitour" target="_blank" className={contactState == 2 ? "h-full flex" : "hidden"}>
@@ -68,8 +68,8 @@ function Contact({contactModalState, setContactModalState}){
                 <div className={contactState == 3 ? "w-full h-full flex justify-between items-center pl-4 pr-4 aparece" : "desaparece"}>
                     <a className="text-blue-700 underline">Matias Seitour</a>
                     <div className="flex h-full">
-                        <CopyToClipboard text={valueCopy} onCopy={() => setCopied(true)}>
-                            <svg onClick={() => copyText(3)} fill="blue" xmlns="http://www.w3.org/2000/svg" className="w-5 mr-2" viewBox="0 0 512 512"><path d="M224 0c-35.3 0-64 28.7-64 64V288c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H224zM64 160c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H288c35.3 0 64-28.7 64-64V384H288v64H64V224h64V160H64z"/></svg>
+                        <CopyToClipboard text="https://www.linkedin.com/in/matias-seitour-1a0118240/" onCopy={() => setCopied(true)}>
+                            <svg fill="blue" xmlns="http://www.w3.org/2000/svg" className="w-5 mr-2" viewBox="0 0 512 512"><path d="M224 0c-35.3 0-64 28.7-64 64V288c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H224zM64 160c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H288c35.3 0 64-28.7 64-64V384H288v64H64V224h64V160H64z"/></svg>
                         </CopyToClipboard>
                         <span className="line-contact__linkedin"></span>
                             <a href="https://www.linkedin.com/in/matias-seitour-1a0118240/" target="_blank" className={contactState == 3 ? "h-full flex" : "hidden"}>
@@ -84,8 +84,8 @@ function Contact({contactModalState, setContactModalState}){
             <div className={contactState == 4 ? "w-full h-full flex justify-between items-center pl-4 pr-4 aparece" : "desaparece"}>
                     <a className="text-white underline">matias.seitour01@gmail.com</a>
                     <div className="flex h-full">
-                        <CopyToClipboard text={valueCopy} onCopy={() => setCopied(true)}>
-                            <svg onClick={() => copyText(4)} fill="white" xmlns="http://www.w3.org/2000/svg" className="w-5 mr-2" viewBox="0 0 512 512"><path d="M224 0c-35.3 0-64 28.7-64 64V288c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H224zM64 160c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H288c35.3 0 64-28.7 64-64V384H288v64H64V224h64V160H64z"/></svg>
+                        <CopyToClipboard text="matias.seitour01@gmail.com" onCopy={() => setCopied(true)}>
+                            <svg fill="white" xmlns="http://www.w3.org/2000/svg" className="w-5 mr-2" viewBox="0 0 512 512"><path d="M224 0c-35.3 0-64 28.7-64 64V288c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H224zM64 160c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H288c35.3 0 64-28.7 64-64V384H288v64H64V224h64V160H64z"/></svg>
                         </CopyToClipboard>
                     </div>
                 </div>

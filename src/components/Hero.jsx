@@ -20,7 +20,7 @@ function Hero(){
             </div>
             <Contact />
             <div className="mt-10 w-full h-full flex items-center flex-col">
-                <button onClick={() => window.open("../cv.pdf")} className="btn text-white bg-black w-2/6">Descargar cv</button>
+                <a href="../public/cv.pdf" download className="btn text-white bg-black w-2/6">{` `} Descargar cv</a>
             </div>
         </header>
     )
