@@ -48,9 +48,9 @@ function Projects(){
                     <div className="flex justify-center w-full text-center text-white animate-wiggle">
                         <h2 className="text-3xl tracking-widest font-medium">PROJECTS</h2>
                     </div>
-                    <div>
+                    <ul>
                         {projects.map((project) => (
-                            <div key={project.id}>
+                            <li key={project.id}>
                                     <Project 
                                         projectId={project.id}
                                         projectBackground={project.backgroundImg}
@@ -59,9 +59,9 @@ function Projects(){
                                         projectVercelLink={project.vercelLink}
                                         projectGitLink={project.gitLink}
                                     /> 
-                            </div>                                                                                    
+                            </li>                                                                                    
                         ))}
-                    </div>  
+                    </ul>  
                 </div> 
             </div>   
         </section>
