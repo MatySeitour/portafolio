@@ -5,41 +5,6 @@ import "../styles.css"
 function Nav(){
     const [navState, setNavState] = useState(false);
 
-    const [state, setActive] = useState({
-        home: "active",
-        projects: "",
-        skills: "",
-    });
-
-    function handleActiveProjects(){
-        setActive({
-            ...state,
-            home: "",
-            projects: "active",
-            skills: "",
-        })
-    }
-    function handleActiveHome(){
-        setActive({
-            ...state,
-            home: "active",
-            projects: "",
-            skills: "",
-        })
-    }
-    function handleActiveSkills(){
-        setActive({
-            ...state,
-            home: "",
-            projects: "",
-            skills: "active",
-        })
-    }
-
-    useEffect(() => {
-        console.log(navState)
-    }, [navState])
-
     return(
         <>
         <div className="fixed flex z-50 items-center top-0 w-full h-16 bg-black">
@@ -51,7 +16,7 @@ function Nav(){
             {navState && 
                 <>
                     <div className="fixed z-50 left-0 top-0 bg-black h-full w-2/3">
-                        <span className="absolute right-6 top-10 text-3xl">X</span>
+                        <span onClick={() => setNavState(prevState => !prevState)} className="absolute right-6 top-10 text-3xl">X</span>
                     </div>
                 </>
             }
