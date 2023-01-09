@@ -59,7 +59,7 @@ function Skills(){
 
     return[
         <div key={35}>
-            <section ref={ref} className="w-full h-full mb-10">
+            <section ref={ref} className="w-full h-full mb-10 overflow-hidden">
 
                      <div className="w-full">
                         <svg className="-translate-y-3 fill-black rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
