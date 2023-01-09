@@ -10,17 +10,33 @@ module.exports = {
           },
         },
         jump: {
-          '0%, 100%': { transform: "translateY(0px)", },
+          '0%': { transform: "translateY(1000px)" },
+          '100%': {
+            transform: "translateY(0px)"
+          },
+        },
+        skill_animation: {
+          '0%': { transform: "translateX(500px)" },
+          '100%': {
+            transform: "translateX(0px)"
+          },
+        },
+        size_animation: {
+          '0%': { transform: "scale(1)" },
           '50%': {
-            transform: "translateY(10px)"
+            transform: "scale(1.1)"
+          },
+          '100%': {
+            transform: "scale(1)"
           },
         }
       },
       animation: {
         'wiggle': 'wiggle 1s ease-in-out',
         'wiggle2': 'wiggle 2s ease-in-out',
-        'jump1': 'jump 1s ease-in-out infinite',
-        'jump2': 'jump 2s ease-in-out infinite',
+        'jump1': 'jump 1s ease-in-out',
+        'skill_animation': 'skill_animation 1s ease-in-out',
+        'size': 'size_animation 2s 1s ease-in-out infinite',
         'jump3': 'jump 3s ease-in-out infinite',
       },
       backgroundColor: {
