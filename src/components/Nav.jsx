@@ -5,6 +5,15 @@ import "../styles.css"
 function Nav(){
     const [navState, setNavState] = useState(false);
 
+    useEffect(() => {
+        if(navState){
+            document.body.classList.add("scroll")
+        }
+        else if(!navState){
+            document.body.classList.remove("scroll")
+        }
+    }, [navState])
+
     return(
         <>
         <div className="fixed flex z-50 items-center top-0 w-full h-16 bg-black">

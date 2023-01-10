@@ -11,9 +11,9 @@ function Project({projectId, projectBackground, projectName, projectDescription,
             <div className="w-full h-full" key={projectId}>
                     <div ref={element} className="w-full card-styles">
                         {screen && 
-                            <div className="card w-96 shadow-xl image-full animate-wiggle">
+                            <div className="card w-96 image-full animate-wiggle">
                                 <figure><img className="rounded-2xl" src={projectBackground} alt="Shoes" /></figure>
-                                <div className="card-body ">
+                                <div className="card-body shadow-card__project">
                                     <h2 className="card-title text-white">{projectName}</h2>
                                     <p className="text-white mb-1">{projectDescription}</p>
                                     <div className="card-actions justify-end">

@@ -42,11 +42,11 @@ function Projects(){
 
     return(
         <section id="project" className="w-screen h-full">
-            <div className="w-full h-full" key={84}>
-                <svg className="w-full translate-y-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="black" fillOpacity="1" d="M0,0L1440,192L1440,320L0,320Z"></path></svg>
-                <div className="w-full h-auto bg-black flex flex-wrap items-center justify-center">
-                    <div className="flex justify-center w-full text-center text-white animate-wiggle">
-                        <h2 className="text-3xl tracking-widest font-medium">PROJECTS</h2>
+            <div className="w-full h-full pr-4 pl-4" key={84}>
+                {/* <svg className="w-full translate-y-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="black" fillOpacity="1" d="M0,0L1440,192L1440,320L0,320Z"></path></svg> */}
+                <div className="pt-6 w-full h-auto flex flex-wrap items-center justify-center">
+                    <div className="flex justify-center w-full text-center text-black animate-wiggle">
+                        <h2 className="text-3xl tracking-widest font-bold text-shadow">PROJECTS</h2>
                     </div>
                     <ul>
                         {projects.map((project) => (
