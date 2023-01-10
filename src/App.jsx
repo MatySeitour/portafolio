@@ -6,6 +6,7 @@ import { Projects } from './components/Projects';
 import { Skills } from './components/Skills';
 import { Footer } from './components/Footer';
 import { useContext } from 'react';
+import { About } from './components/About';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       <CopyContextProvider>
         {/* <Background /> */}
         <Hero />
+        <About />
         <Projects />
         <Skills />
         <Footer />

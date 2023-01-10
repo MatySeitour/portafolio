@@ -1,5 +1,12 @@
 body{
-    background-color: aliceblue;
+    background-color: rgb(240, 240, 240);
+    /* background-color: rgb(45, 44, 45); */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .active{
@@ -248,6 +255,12 @@ html{
     background: linear-gradient(45deg, #004, #a00);
 }
 
+/* TEXT SHADOW EFFECT*/
+
+.text-shadow{
+    text-shadow: 1px 4px 0px #00f0ff;
+}
+
 /* CONTACT SECTION */
 
 
@@ -342,4 +355,11 @@ html{
 .desaparece{
     position: absolute;
     opacity: 0;
+}
+
+/* PROJECT */
+
+.shadow-card__project{
+    box-shadow: 0px 3px 30px -10px black;
+    border-radius: 20px;
 }

@@ -21,23 +21,23 @@ module.exports = {
             transform: "translateX(0px)"
           },
         },
-        size_animation: {
-          '0%': { transform: "scale(1)" },
-          '50%': {
-            transform: "scale(1.1)"
-          },
+        skill_animation_left: {
+          '0%': { transform: "translateX(-500px)" },
           '100%': {
-            transform: "scale(1)"
+            transform: "translateX(0px)"
           },
-        }
+        },
       },
       animation: {
         'wiggle': 'wiggle 1s ease-in-out',
-        'wiggle2': 'wiggle 2s ease-in-out',
-        'jump1': 'jump 1s ease-in-out',
-        'skill_animation': 'skill_animation 1s ease-in-out',
-        'size': 'size_animation 2s 1s ease-in-out infinite',
-        'jump3': 'jump 3s ease-in-out infinite',
+        'wiggle1': 'jump 1s .5s ease-in-out',
+        'jump': 'jump 1s ease-in-out',
+        'jump1': 'jump .3s ease-in-out',
+        'jump2': 'jump .5s ease-in-out',
+        'jump3': 'jump .7s ease-in-out',
+        'jump4': 'jump .9s ease-in-out',
+        'skill_left': 'skill_animation .9s ease-in-out',
+        'skill_right': 'skill_animation_left .9s ease-in-out',
       },
       backgroundColor: {
         'primary': '#0cc',
