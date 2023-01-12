@@ -1,5 +1,6 @@
 import images from "../assets/images.jpg"
 import useIntersection from "../CustomHooks/useIntersection";
+import {Background} from "./Background"
 import { useRef } from "react";
 import { Nav } from "./Nav";
 import { Contact } from "./Contact";
@@ -9,7 +10,8 @@ import {About} from "./About"
 function Hero(){
 
     return(
-        <header id='about_me' className="flex flex-col justify-center items-center mb-9 pt-40 pl-5 pr-5">
+        <header id='about_me' className="relative flex flex-col justify-center items-center pb-9 pt-40 pl-5 pr-5">
+            <Background />
             <Nav />
              <div className="h-auto w-full">
                 <div className="h-full w-full flex flex-col justify-center items-center p-5 sm:flex-row">

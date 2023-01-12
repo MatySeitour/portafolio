@@ -59,12 +59,12 @@ function Skills(){
 
     return[
         <div key={35}>
-            <section ref={ref} className="w-full h-full mb-10 overflow-hidden">
+            <section ref={ref} className="w-full h-auto overflow-hidden bg-slate-200">
                     {screen && 
                     <>
-                        <div id="skills" className="w-full h-screen flex justify-center pt-24 flex-col items-center">
+                        <div id="skills" className="w-full h-full flex justify-center pt-24 flex-col items-center">
                             <h3 className="text-3xl tracking-widest font-bold text-shadow text-black animate-wiggle">MY SKILLS</h3>
-                            <ul className="w-full h-screen flex justify-between flex-wrap py-8 px-6">
+                            <ul className="w-full h-full flex justify-between flex-wrap py-8 px-6">
                                 {skillsData.map((skill) => (
                                     <Skill 
                                         key={skill.id}
