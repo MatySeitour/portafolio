@@ -1,28 +1,30 @@
-body{
-    /* background-color: rgb(250, 250, 250); */
-    /* background-color: rgb(45, 44, 45); */
-}
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*-------------------- REMOVE SCROLL CLASS -------------------- */
+
+
+.scroll{
+    overflow-y: hidden;
+}
+
+
+/*-------------------- NAV OPACITY BACKGROUND -------------------- */
+
+
 .active{
     background-color: black;
     transition: background .5s ease;
 }
 
-.left{
-    border-top-left-radius: 1rem;
-    border-bottom-left-radius: 1rem;
-}
-
-.right{
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-}
 
 @keyframes move {
     100% {
@@ -30,10 +32,10 @@ body{
     }
 }
 
-/* HAMBURGUER NAV */
+/*-------------------- HAMBURGUER NAV --------------------*/
 
 .hamburguer-top{
-    transform: rotate(45deg) translateY(10px) translateX(6px);
+    transform: rotate(45deg) translateY(0px) translateX(-7px);
     transition: all .5s;
 }
 
@@ -43,10 +45,12 @@ body{
 }
 
 .hamburguer-bottom{
-    transform: rotate(-45deg) translateY(-6px) translateX(1px);
+    transform: rotate(-45deg) translateY(-20px) translateX(11px);
     transition: all .5s;
 
 }
+
+/* -------------------- BACKGROUND ANIMATE -------------------- */
 
 .background {
     z-index: -1;
@@ -257,38 +261,15 @@ body{
     min-height: 100px;
 }
 
-html{
-    scroll-behavior: smooth;
-}
 
-.scroll{
-    overflow-y: hidden;
-}
+/*-------------------- TEXT SHADOW EFFECT -------------------- */
 
-.height-contact{
-    min-height: 1500px;
-}
-
-.background-icon{
-    background: linear-gradient(45deg, #004, #a00);
-}
-
-/* TEXT SHADOW EFFECT*/
 
 .text-shadow{
     text-shadow: 0px 4px 0px #10c0cd;
 }
 
-/* CONTACT SECTION */
-
-
-.contact-items__container{
-    display: flex;
-    justify-content: space-around;
-    min-height: 50px;
-    align-items: center;
-    border-radius: 100px;
-}
+/*-------------------- CONTACT ITEMS STYLES -------------------- */
 
 .contact-whatsapp{
     min-width: 100px;
@@ -364,20 +345,60 @@ html{
     margin-right: 6px;
 }
 
-.aparece{
+.appear-info__contact{
     position: absolute;
     opacity: 1;
     transition: all 1s ease;
 }
 
-.desaparece{
+.disappear-info__contact{
     position: absolute;
     opacity: 0;
 }
 
-/* PROJECT */
+/*-------------------- BUTTON CV EFFECT DESKTOP -------------------- */
+
+.button-container{
+    overflow: hidden;
+}
+
+.button-container:hover.button-container a{
+    top: 50px;
+    transition: all .3s;
+}
+
+.button-container span{
+    position: absolute;
+    top: -50px;
+    transition: all .2s ease;
+}
+
+.button-container:hover.button-container span{
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .2s ease;
+}
+
+
+/*-------------------- PROJECT SECTION -------------------- */
+
 
 .shadow-card__project{
     box-shadow: 0px 3px 30px -10px black;
     border-radius: 20px;
+}
+
+
+.card-desktop::before{
+    opacity: 0 !important;
+}
+
+.card:hover div{
+    bottom: 0;
+    background: #000a;
+    transition: bottom .5s ease;
+}
+
+.card-actions{
+    background: none !important;
 }
