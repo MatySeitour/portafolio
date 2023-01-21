@@ -7,7 +7,6 @@ export function CopyContextProvider({ children }) {
 
     useEffect(() => {
         if (copied === true) {
-            console.log("pasa")
             setTimeout(function(){
                 setCopied(false)
             }, 3000);
