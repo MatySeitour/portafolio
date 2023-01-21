@@ -2,6 +2,7 @@ import { Project } from "./Project";
 import imagePeliwiki from "../assets/peliwiki.png"
 import imageBatatabit from "../assets/batatabit.png"
 import imageRappi from "../assets/rappi.png"
+import {useMedia} from "../CustomHooks/useMedia"
 
 function Projects(){
     const projects = [
@@ -30,6 +31,22 @@ function Projects(){
             vercelLink: "https://rappi-challenge.vercel.app/",
         },
         {
+            id: 3,
+            name: "Rappi Cart",
+            description: "This is a web app about an e-commerce where you can filter and order products, as well as add them to a cart. (This is a challenge that they ask to work at Rappi)",
+            backgroundImg: imageRappi,
+            gitLink: "https://github.com/MatySeitour/rappi-challenge",
+            vercelLink: "https://rappi-challenge.vercel.app/",
+        },
+        {
+            id: 3,
+            name: "Rappi Cart",
+            description: "This is a web app about an e-commerce where you can filter and order products, as well as add them to a cart. (This is a challenge that they ask to work at Rappi)",
+            backgroundImg: imageRappi,
+            gitLink: "https://github.com/MatySeitour/rappi-challenge",
+            vercelLink: "https://rappi-challenge.vercel.app/",
+        },
+        {
             id: 4,
             name: "CalculaThor",
             description: "this is the best asgard calculator",
@@ -39,32 +56,62 @@ function Projects(){
         },
     ]
 
+    const mobileResponsive = useMedia('(max-width: 600px)');
 
     return(
-        <section id="project" className="w-screen h-full">
-            <div className="w-full h-full pr-4 pl-4" key={84}>
-                {/* <svg className="w-full translate-y-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="black" fillOpacity="1" d="M0,0L1440,192L1440,320L0,320Z"></path></svg> */}
-                <div className="pt-6 w-full h-auto flex flex-wrap items-center justify-center">
-                    <div className="flex justify-center w-full text-center text-black animate-wiggle">
-                        <h2 className="text-3xl tracking-widest font-bold text-shadow">PROJECTS</h2>
-                    </div>
-                    <ul>
-                        {projects.map((project) => (
-                            <li key={project.id}>
-                                    <Project 
-                                        projectId={project.id}
-                                        projectBackground={project.backgroundImg}
-                                        projectName={project.name}
-                                        projectDescription={project.description}
-                                        projectVercelLink={project.vercelLink}
-                                        projectGitLink={project.gitLink}
-                                    /> 
-                            </li>                                                                                    
-                        ))}
-                    </ul>  
-                </div> 
-            </div>   
-        </section>
+        <>
+            {mobileResponsive ? 
+                <section id="projects" className="w-full min-h-[100vh] pt-[60px]">
+                    <div className="w-full h-full pr-4 pl-4" key={84}>
+                        <div className="pt-6 w-full h-auto flex flex-wrap items-center justify-center">
+                            <div className="flex justify-center w-full text-center text-black animate-wiggle">
+                                <h2 className="text-3xl tracking-widest font-bold text-shadow">PROJECTS</h2>
+                            </div>
+                            <ul>
+                                {projects.map((project) => (
+                                    <li key={project.id}>
+                                        <Project 
+                                            projectId={project.id}
+                                            projectBackground={project.backgroundImg}
+                                            projectName={project.name}
+                                            projectDescription={project.description}
+                                            projectVercelLink={project.vercelLink}
+                                            projectGitLink={project.gitLink}
+                                        /> 
+                                    </li>                                                                                    
+                                ))}
+                            </ul>  
+                        </div> 
+                    </div>   
+                </section>
+                
+                :
+
+                <section id="projects" className="w-full min-h-[100vh] pt-[60px]">
+                    <div className="w-full h-full pr-4 pl-4" key={84}>
+                        <div className="pt-6 w-full h-auto flex flex-col items-center justify-center">
+                            <div className="flex justify-center w-full text-center text-black animate-wiggle">
+                                <h2 className="text-3xl tracking-widest font-bold text-shadow mb-10">PROJECTS</h2>
+                            </div>
+                            <ul className="h-full w-full flex flex-wrap justify-evenly">
+                                {projects.map((project) => (
+                                    <li key={project.id}>
+                                        <Project 
+                                            projectId={project.id}
+                                            projectBackground={project.backgroundImg}
+                                            projectName={project.name}
+                                            projectDescription={project.description}
+                                            projectVercelLink={project.vercelLink}
+                                            projectGitLink={project.gitLink}
+                                        /> 
+                                    </li>                                                                                    
+                                ))}
+                            </ul>  
+                        </div> 
+                    </div>   
+                </section>
+            }
+        </>
     )
 }
 

@@ -9,6 +9,7 @@ import imageNode from "../assets/icons8-node-js-96.png"
 import imageExpress from "../assets/icons8-express-js-100.png"
 import imageSQL from "../assets/icons8-logo-de-mysql-96.png"
 import imageTailwind from "../assets/icons8-tailwind-css-96.png"
+import { useMedia } from "../CustomHooks/useMedia";
 
 function Skills(){
     const skillsData = [
@@ -56,29 +57,55 @@ function Skills(){
 
     const ref = useRef(null);
     const screen = useIntersection(ref)
+    const mobileResponsive = useMedia('(max-width: 600px)');
 
     return[
-        <div key={35}>
-            <section ref={ref} className="w-full h-auto overflow-hidden bg-slate-200">
+        <div className="min-h-[100vh flex" key={35}>
+            {mobileResponsive ?
+                <section ref={ref} id="skills" className="w-full h-full overflow-hidden bg-slate-200">
                     {screen && 
-                    <>
-                        <div id="skills" className="w-full h-full flex justify-center pt-24 flex-col items-center">
-                            <h3 className="text-3xl tracking-widest font-bold text-shadow text-black animate-wiggle">MY SKILLS</h3>
-                            <ul className="w-full h-full flex justify-between flex-wrap py-8 px-6">
-                                {skillsData.map((skill) => (
-                                    <Skill 
+                        <>
+                            <div className="w-full h-full flex justify-center pt-24 flex-col items-center">
+                                <h3 className="text-3xl tracking-widest font-bold text-shadow text-black animate-wiggle">MY SKILLS</h3>
+                                <ul className="w-full h-full flex justify-between flex-wrap py-8 px-6">
+                                    {skillsData.map((skill) => (
+                                        <Skill 
                                         key={skill.id}
                                         skillId={skill.id}
                                         skillName={skill.name}
                                         skillImgUrl={skill.url_image}
-                                    />
-                                ))}
-                            </ul>
-                        </div>
-                    </>
-                }
-                   
-            </section>
+                                        />
+                                    ))}
+                                </ul>
+                            </div>
+                        </>
+                    }
+            
+                </section>
+                
+                :
+
+                <section ref={ref} id="skills" className="w-full h-full overflow-hidden bg-slate-200">
+                    {screen && 
+                        <>
+                            <div className="w-full h-full flex justify-center pt-20 flex-col items-center">
+                                <h3 className="text-3xl tracking-widest font-bold text-shadow mb-4 text-black animate-wiggle">MY SKILLS</h3>
+                                <ul className="w-full min-w-[100%] h-full grid grid-cols-4 gap-4 items-center justify-center p-4">
+                                    {skillsData.map((skill) => (
+                                        <Skill 
+                                        key={skill.id}
+                                        skillId={skill.id}
+                                        skillName={skill.name}
+                                        skillImgUrl={skill.url_image}
+                                        />
+                                    ))}
+                                </ul>
+                            </div>
+                        </>
+                    }
+    
+                </section>
+            }
         </div>
     ]
 }
