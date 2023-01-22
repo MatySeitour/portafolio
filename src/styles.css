@@ -271,7 +271,7 @@ html{
 
 /*-------------------- CONTACT ITEMS STYLES -------------------- */
 
-.contact-whatsapp{
+.contact-item{
     min-width: 100px;
     display: flex;
     justify-content: space-around;
@@ -283,6 +283,80 @@ html{
     position: relative;
 }
 
+.contact-item__gmail{
+    min-width: 100px;
+    display: flex;
+    justify-content: space-around;
+    min-height: 50px;
+    align-items: center;
+    border-radius: 100px;
+    background-color: #0a0;
+    transition: min-width .3s ease;
+    position: relative;
+}
+
+.icon-contact{
+    opacity: 1;
+    transition: opacity .5s ease;
+}
+
+.contact-text{
+    opacity: 0;
+    transition: opacity .1s ease;
+}
+
+.contact-links{
+    opacity: 0;
+    transition: opacity .1s ease;
+}
+
+.contact-item:hover .contact-links{
+    opacity: 1;
+}
+
+.contact-item__gmail:hover .contact-links{
+    opacity: 1;
+}
+
+.contact-item:hover{
+    min-width: 250px;
+}
+
+.contact-item__gmail:hover{
+    min-width: 310px;
+}
+
+.contact-item__gmail:hover .icon-contact{
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+.contact-item:hover .icon-contact{
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+.contact-item:hover .contact-text{
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+.contact-item__gmail:hover .contact-text{
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+.contact-whatsapp{
+    min-width: 100px;
+    display: flex;
+    justify-content: space-around;
+    min-height: 50px;
+    align-items: center;
+    border-radius: 100px;
+    background-color: #0a0;
+    transition: min-width .3s ease;
+    position: relative;
+}
 .contact-github{
     min-width: 100px;
     display: flex;
