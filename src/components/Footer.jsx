@@ -14,9 +14,9 @@ function Footer(){
       </div> 
       <div>
         <div className="grid grid-flow-col gap-4">
-          <a href="https://www.linkedin.com/in/matias-seitour-1a0118240/" target="_blank" className="h-auto flex justify-center items-center w-auto p-2 rounded-full bg-[#10c0cd]"><FontAwesomeIcon className="w-8 h-8 rounded-[100px]" icon={faLinkedin}/></a> 
-          <a href="https://github.com/MatySeitour" target="_blank" className="h-auto flex justify-center items-center w-auto p-2 rounded-full bg-[#10c0cd]"><FontAwesomeIcon className="w-8 h-8 rounded-[100px]" icon={faGithub}/></a> 
-          <a href="https://twitter.com/MatySeitour" target="_blank" className="h-auto flex justify-center items-center w-auto p-2 rounded-full bg-[#10c0cd]"><FontAwesomeIcon className="w-8 h-8 rounded-[100px]" icon={faTwitter}/></a> 
+          <a href="https://www.linkedin.com/in/matias-seitour-1a0118240/" target="_blank" className="h-auto flex justify-center items-center w-auto p-2 rounded-full bg-[#10c0cd] hover:scale-110 transition-all"><FontAwesomeIcon className="w-8 h-8 rounded-[100px]" icon={faLinkedin}/></a> 
+          <a href="https://github.com/MatySeitour" target="_blank" className="h-auto flex justify-center items-center w-auto p-2 rounded-full bg-[#10c0cd] hover:scale-110 transition-all"><FontAwesomeIcon className="w-8 h-8 rounded-[100px]" icon={faGithub}/></a> 
+          <a href="https://twitter.com/MatySeitour" target="_blank" className="h-auto flex justify-center items-center w-auto p-2 rounded-full bg-[#10c0cd] hover:scale-110 transition-all"><FontAwesomeIcon className="w-8 h-8 rounded-[100px]" icon={faTwitter}/></a> 
         </div>
       </div>
     </footer>
