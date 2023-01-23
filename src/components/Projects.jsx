@@ -31,22 +31,6 @@ function Projects(){
             vercelLink: "https://rappi-challenge.vercel.app/",
         },
         {
-            id: 3,
-            name: "Rappi Cart",
-            description: "This is a web app about an e-commerce where you can filter and order products, as well as add them to a cart. (This is a challenge that they ask to work at Rappi)",
-            backgroundImg: imageRappi,
-            gitLink: "https://github.com/MatySeitour/rappi-challenge",
-            vercelLink: "https://rappi-challenge.vercel.app/",
-        },
-        {
-            id: 3,
-            name: "Rappi Cart",
-            description: "This is a web app about an e-commerce where you can filter and order products, as well as add them to a cart. (This is a challenge that they ask to work at Rappi)",
-            backgroundImg: imageRappi,
-            gitLink: "https://github.com/MatySeitour/rappi-challenge",
-            vercelLink: "https://rappi-challenge.vercel.app/",
-        },
-        {
             id: 4,
             name: "CalculaThor",
             description: "this is the best asgard calculator",
