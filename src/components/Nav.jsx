@@ -28,6 +28,19 @@ function Nav(){
             href_scroll: "skills",
         },
     ]
+    const [navDesktopEffect, setNavDesktopEffect] = useState(false)
+
+    useEffect(() => {
+        const onScroll = e => {
+            const newScroll = window.scrollY > 200
+            navDesktopEffect !== newScroll && setNavDesktopEffect(newScroll)
+        }
+
+        document.addEventListener(`scroll`, onScroll);
+        return () => document.removeEventListener(`scroll`, onScroll)
+
+
+    }, [navDesktopEffect])
 
     useEffect(() => {
         if(navState){
@@ -64,10 +77,10 @@ function Nav(){
 
                 :
                 
-                <nav className="fixed flex flex-row justify-center items-center top-0 left-0 w-full z-[40] h-[46px] bg-slate-800">
+                <nav className={navDesktopEffect ? "fixed flex flex-row justify-center items-center top-0 left-0 w-full z-[40] h-[46px] bg-slate-600 transition-all" : "fixed flex flex-row justify-center items-center top-0 left-0 w-full z-[40] h-[66px] bg-slate-800 transition-all"}>
                     <ul className="w-full h-full flex justify-end items-end">
                         {navItems.map((item) => (
-                            <li className="h-full min-w-[80px] flex flex-col justify-center items-center text-white font-bold tracking-wider cursor-pointer hover:bg-slate-700 transition-all"><a className="w-full h-full p-6 flex justify-center items-center" href={`#${item.href_scroll}`}>{item.name}</a></li>
+                            <li key={item.id} className="h-full min-w-[80px] flex flex-col justify-center items-center text-white text-shadow__desktop font-bold tracking-wider cursor-pointer hover:bg-slate-700 transition-all"><a className="w-full h-full p-6 flex justify-center items-center" href={`#${item.href_scroll}`}>{item.name}</a></li>
                         ))}
                     </ul>
                 </nav>
