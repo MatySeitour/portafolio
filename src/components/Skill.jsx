@@ -18,7 +18,7 @@ function Skill({skillName, skillImgUrl, skillId}){
 
                 :
                 
-                <li className={skillId % 2 == 0 ? `animate-skill_left flex justify-center items-center` : `animate-skill_right flex justify-center items-center`}>
+                <li className= {`animate-wiggle flex justify-center items-center`}>
                     <div className="w-40 hover:scale-105 transition-all min-h-[178px] shadow-xl bg-white rounded-2xl flex flex-col justify-center items-center mb-5">
                         <div>
                             <img src={skillImgUrl}/>
