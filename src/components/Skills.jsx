@@ -60,9 +60,9 @@ function Skills(){
     const mobileResponsive = useMedia('(max-width: 600px)');
 
     return[
-        <div className="min-h-[100vh flex" key={35}>
+        <div className="min-h-[100vh] flex items-end" key={35}>
             {mobileResponsive ?
-                <section ref={ref} id="skills" className="w-full h-full overflow-hidden bg-slate-200">
+                <section ref={ref} id="skills" className="w-full h-screen overflow-hidden bg-slate-200">
                     {screen && 
                         <>
                             <div className="w-full h-full flex justify-center pt-24 flex-col items-center">
@@ -85,7 +85,7 @@ function Skills(){
                 
                 :
 
-                <section ref={ref} id="skills" className="w-full h-full overflow-hidden bg-slate-200">
+                <section ref={ref} id="skills" className="w-full h-screen overflow-hidden bg-slate-200">
                     {screen && 
                         <>
                             <div className="w-full h-full flex justify-center pt-20 flex-col items-center">
