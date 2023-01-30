@@ -38,8 +38,8 @@ function Project({projectId, projectBackground, projectName, projectDescription,
                 <div className="w-full h-full" key={projectId}>
                     <div ref={element} className="w-full card-styles">
                         {screen && 
-                            <div className="card card-desktop h-[320px] w-[316px] mb-10 mr-10 p-0 overflow-hidden image-full animate-wiggle relative">
-                                <figure><img className="rounded-2xl shadow-card__project" src={projectBackground} alt="Shoes" /></figure>
+                            <div className="card card-desktop lg:drop-shadow-xl h-[320px] w-[316px] mb-10 mr-10 p-0 overflow-hidden image-full animate-wiggle relative">
+                                <figure><img className="rounded-2xl border border-[#dfdfdf]" src={projectBackground} alt="Shoes" /></figure>
                                 <div className="card-body absolute bottom-[-100%] transition-all">
                                     <h2 className="card-title text-white">{projectName}</h2>
                                     <p className="text-white mb-1">{projectDescription}</p>
