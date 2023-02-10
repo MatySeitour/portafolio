@@ -82,7 +82,7 @@ function Contact({contactModalState, setContactModalState}){
 
                     <ul className="w-full h-60 flex items-center flex-col">
                         {contactItems.map((item) => (
-                            <li className={`item.animation mb-6`} key={item.id}>
+                            <li className={`${item.animation} mb-6`} key={item.id}>
                                 <div onClick={() => setContactState(item.id)} className={contactState == item.id ? `${item.style}  ${item.styleActive} shadow-lg` : `shadow-lg ${item.style}`}>
                                     <div className={contactState == item.id ? "w-full h-full flex justify-between items-center pl-4 pr-4 appear-info__contact" : "disappear-info__contact"}>
                                         <a className={`${item.colorText} underline`}>{item.value}</a>
