@@ -2,6 +2,7 @@ import { Project } from "./Project";
 import imagePeliwiki from "../assets/peliwiki.png"
 import imageBatatabit from "../assets/batatabit.png"
 import imageRappi from "../assets/rappi.png"
+import imageTasker from "../assets/tasker.png"
 import {useMedia} from "../CustomHooks/useMedia"
 
 function Projects(){
@@ -37,6 +38,14 @@ function Projects(){
             backgroundImg: "a",
             gitLink: "https://github.com/MatySeitour/calculathor.github.io",
             vercelLink: "https://peliwiki.vercel.app/",
+        },
+        {
+            id: 5,
+            name: "Tasker",
+            description: "This is a basic task CRUD web application using the MERN stack (MySql, Express, React, Node). for authentication and authorization I used passport-js and jwt, and to manage cookies I used cookie-parser.",
+            backgroundImg: imageTasker,
+            gitLink: "https://github.com/MatySeitour/tasker-frontend",
+            vercelLink: "tasker-frontend.vercel.app",
         },
     ]
 
