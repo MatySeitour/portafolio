@@ -45,7 +45,7 @@ function Projects(){
             description: "This is a basic task CRUD web application using the MERN stack (MySql, Express, React, Node). for authentication and authorization I used passport-js and jwt, and to manage cookies I used cookie-parser.",
             backgroundImg: imageTasker,
             gitLink: "https://github.com/MatySeitour/tasker-frontend",
-            vercelLink: "tasker-frontend.vercel.app",
+            vercelLink: "https://tasker-frontend.vercel.app/",
         },
     ]
 
