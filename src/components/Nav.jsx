@@ -27,6 +27,11 @@ function Nav(){
             id: 4,
             href_scroll: "skills",
         },
+        {
+            name: "TEST PR",
+            id: 5,
+            href_scroll: "test_pr",
+        },
     ]
     const [navDesktopEffect, setNavDesktopEffect] = useState(false)
 
