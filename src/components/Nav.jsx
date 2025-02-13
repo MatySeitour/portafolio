@@ -18,7 +18,7 @@ function Nav(){
             href_scroll: "about",
         },
         {
-            name: "PROJECTS",
+            name: "EXAMPLE",
             id: 3,
             href_scroll: "projects",
         },
